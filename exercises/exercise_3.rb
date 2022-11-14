@@ -5,4 +5,8 @@ require_relative './exercise_2'
 puts "Exercise 3"
 puts "----------"
 
-# Your code goes here ...
+@store3 = Store.find_by(id: 3)
+@store3.destroy
+puts "deleted successfully"
+puts " New count for stores is : #{Store.count}"
+puts 'done'
